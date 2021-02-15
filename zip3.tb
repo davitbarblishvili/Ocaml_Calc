@@ -1,0 +1,19 @@
+(* Simple testbench for your zip3 code.
+
+Run this, e.g., with
+
+ocaml < zip3.tb
+
+*)
+
+#use "zip3.ml";;
+
+(* Should produce [] *)
+zip3 [] [] [];;
+
+(* Should produce [(1, 4, 7); (2, 5, 8); (3, 6, 9)] *)
+zip3 [1;2;3] [4;5;6] [7;8;9];;
+
+(* Should produce [(1, 'a', 0); (2, 'b', 0)] *)
+zip3 [1;2] ['a';'b';'c'] [0;0];;
+
